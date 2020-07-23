@@ -28,15 +28,13 @@ void temp_sensor::init()
 
 database::database()
 {
-    temperature = io.feed("temperature");
-    Serial.println("hello");  
+    temperature = io.feed("temperature"); 
 }
 void database::init()
 {
     io.connect();
     while(io.status() < AIO_CONNECTED) {
         Serial.print(".");
-        Serial.println(io.status());
         delay(500);
     }
 }
@@ -44,9 +42,7 @@ void database::init()
 void database::write(float data)
     {
         io.run();
-        Serial.println("writing");
         temperature->save(data);
-        Serial.println("writing1");
         if (Serial)
         {     
             Serial.print("Sending: ");
