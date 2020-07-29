@@ -10,19 +10,19 @@ void setup()
     Serial.begin(9600);
     Serial.println("Staring...");
     adafruitIO.init();
-    tmp.init();
-    Serial.println("temp");
-    
+    tmp.init();    
 }
 
 void loop()
 {
-    float target = 25.4;
+    // Set the temperature you want to be alerted at
+    const float thresholdTemperature = -50;
+
     Serial.println(tmp.temperature());
     Serial.println("After Reading");
     adafruitIO.write(tmp.temperature());
     Serial.println("sent");
-    if (tmp.temperature() >= target && alertTimer.elapsed() >= alertTimer.interval)
+    if (tmp.temperature() >= thresholdTemperature && alertTimer.elapsed() >= alertTimer.interval)
     {
         alert.send();
         alertTimer.start();
