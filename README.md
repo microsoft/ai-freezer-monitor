@@ -5,11 +5,11 @@ This tutorial covers everything you'll need to build and run your own freezer te
 ## Materials and Tech  
 |Tech | Description | Link |
 |-----|-------------|------|
-| ESP32 DevKit (a) | WiFi enabled prototyping board| https://www.keyestudio.com/products/2019new-keyestudio-esp32-wroom-32d-module-core-board-wi-fibtble-mcu-for-arduino
-| Adafruit MCP9600 (b) | I2C Thermocouple amplifier| https://www.adafruit.com/product/4101
-| Adafruit Type K Thermocouple (c) | 2 wire thermocouple effective temperature ranger -200c to 800c +/-2c| https://www.adafruit.com/product/3245
-| AdafruitIO | Online database | adafruit.io|
-| IFTTT | Online automation platform | http://ifttt.com
+| ESP32 DevKit (a) | WiFi enabled prototyping board| [https://www.keyestudio.com/products/2019new-keyestudio-esp32-wroom-32d-module-core-board-wi-fibtble-mcu-for-arduino](https://www.keyestudio.com/products/2019new-keyestudio-esp32-wroom-32d-module-core-board-wi-fibtble-mcu-for-arduino)
+| Adafruit MCP9600 (b) | I2C Thermocouple amplifier| [https://www.adafruit.com/product/4101](https://www.adafruit.com/product/4101) |
+| Adafruit Type K Thermocouple (c) | 2 wire thermocouple effective temperature ranger -200c to 800c +/-2c| [https://www.adafruit.com/product/3245](https://www.adafruit.com/product/3245) |
+| AdafruitIO | Online database | [https://adafruit.io](https://adafruit.io)|
+| IFTTT | Online automation platform | [http://ifttt.com](http://ifttt.com) |
 
 | Material/Tools |
 |----------|
