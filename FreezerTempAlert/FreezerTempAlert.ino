@@ -3,7 +3,7 @@
 temp_sensor tmp;
 alert_handler alert;
 database adafruitIO;
-SimpleTimer alertTimer(6e4);
+SimpleTimer alertTimer(6e5);
 
 void setup()
 {
