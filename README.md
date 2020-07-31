@@ -40,7 +40,43 @@ This tutorial covers everything you'll need to build and run your own freezer te
 
 ## Code
 
-You'll need to update the config.h file with your AdafruitIO and WiFi credentials.
+You'll need to creat a config.h file and fill in your AdafruitIO and WiFi credentials.
+
+1. In the *FreezerTempAlert* folder create a new file called *config.h*
+
+1. Copy and paste the code below into that that file and save:
+```C++
+/************************ Adafruit IO Config *******************************/
+
+// visit io.adafruit.com if you need to create an account,
+// or if you need your Adafruit IO key.
+#define IO_USERNAME "your-username"
+#define IO_KEY "your-key"
+
+/******************************* WIFI **************************************/
+
+#define WIFI_SSID "your-ssid"
+#define WIFI_PASS "your-password"
+
+#include "AdafruitIO_WiFi.h"
+
+#if defined(USE_AIRLIFT) || defined(ADAFRUIT_METRO_M4_AIRLIFT_LITE) ||         \
+    defined(ADAFRUIT_PYPORTAL)
+// Configure the pins used for the ESP32 connection
+#if !defined(SPIWIFI_SS) // if the wifi definition isnt in the board variant
+// Don't change the names of these #define's! they match the variant ones
+#define SPIWIFI SPI
+#define SPIWIFI_SS 10 // Chip select pin
+#define NINA_ACK 9    // a.k.a BUSY or READY pin
+#define NINA_RESETN 6 // Reset pin
+#define NINA_GPIO0 -1 // Not connected
+#endif
+AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS, SPIWIFI_SS,
+                   NINA_ACK, NINA_RESETN, NINA_GPIO0, &SPIWIFI);
+#else
+AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS);
+#endif
+```
 
 1. Find your Adafruit IO credentials in the top right corner of the Adafruit IO webpage. 
     ![Adafruit IO Webpage](/media/iokeys.png)

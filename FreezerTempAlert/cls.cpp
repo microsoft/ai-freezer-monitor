@@ -1,5 +1,10 @@
 #include "cls.h"
+
+#if __has_include("config.h")
 #include "config.h"
+#else
+#error Your configuration file missing. Go to aka.ms/freezerconfig for instruction on how to add this file.
+#endif
 
 temp_sensor::temp_sensor(uint8_t address)
 {
