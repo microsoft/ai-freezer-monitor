@@ -23,13 +23,6 @@
 #define WIFI_SSID "your_ssid"
 #define WIFI_PASS "your_pass"
 
-// uncomment the following line if you are using airlift
-// #define USE_AIRLIFT
-
-// uncomment the following line if you are using winc1500
-// #define USE_WINC1500
-
-// comment out the following lines if you are using fona or ethernet
 #include "AdafruitIO_WiFi.h"
 
 #if defined(USE_AIRLIFT) || defined(ADAFRUIT_METRO_M4_AIRLIFT_LITE) ||         \
@@ -48,22 +41,3 @@ AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS, SPIWIFI_SS,
 #else
 AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS);
 #endif
-/******************************* FONA **************************************/
-
-// the AdafruitIO_FONA client will work with the following boards:
-//   - Feather 32u4 FONA -> https://www.adafruit.com/product/3027
-
-// uncomment the following two lines for 32u4 FONA,
-// and comment out the AdafruitIO_WiFi client in the WIFI section
-// #include "AdafruitIO_FONA.h"
-// AdafruitIO_FONA io(IO_USERNAME, IO_KEY);
-
-/**************************** ETHERNET ************************************/
-
-// the AdafruitIO_Ethernet client will work with the following boards:
-//   - Ethernet FeatherWing -> https://www.adafruit.com/products/3201
-
-// uncomment the following two lines for ethernet,
-// and comment out the AdafruitIO_WiFi client in the WIFI section
-// #include "AdafruitIO_Ethernet.h"
-// AdafruitIO_Ethernet io(IO_USERNAME, IO_KEY); 
