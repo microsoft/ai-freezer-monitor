@@ -71,7 +71,6 @@ void alert_handler::send()
 {
     io.run();
     temp_alert->save(1);
-    temp_alert->save(0);
 
     if (Serial)
     {
