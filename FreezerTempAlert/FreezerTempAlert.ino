@@ -8,7 +8,7 @@ SimpleTimer alertTimer(6e5);
 void setup()
 {
     Serial.begin(9600);
-    Serial.println("Staring...");
+    Serial.println("Starting...");
     adafruitIO.init();
     tmp.init();    
 }
@@ -16,12 +16,12 @@ void setup()
 void loop()
 {
     // Set the temperature you want to be alerted at
+    // Default temperature is -50 celsius
     const float thresholdTemperature = -50;
 
     Serial.println(tmp.temperature());
-    Serial.println("After Reading");
     adafruitIO.write(tmp.temperature());
-    Serial.println("sent");
+
     if (tmp.temperature() >= thresholdTemperature && alertTimer.elapsed() >= alertTimer.interval)
     {
         alert.send();
