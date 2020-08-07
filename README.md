@@ -1,6 +1,6 @@
 
-# Scientific Freezer Temperature Monitor
-This tutorial covers everything you'll need to build and run your own freezer temperature monitor and alert system. We'll cover how to build the device, setting up a free online database, flashing code onto the device, monitoring the database and sending email alerts.
+# IoT Freezer Temperature Monitor
+This tutorial covers everything you'll need to build and run your own freezer temperature monitor and alert system. We'll cover how to build the device, setting up a free online database, flashing code onto the device, monitoring the database and sending email alerts. The components used in this project can measure temperatures as low as -200 celsius.
 
 This project takes about 60 to 90 minutes to build.
 
