@@ -10,8 +10,8 @@ This project takes about 60 to 90 minutes to build.
 | ESP32 DevKit (a) | WiFi enabled prototyping board| [https://www.keyestudio.com/products/2019new-keyestudio-esp32-wroom-32d-module-core-board-wi-fibtble-mcu-for-arduino](https://www.keyestudio.com/products/2019new-keyestudio-esp32-wroom-32d-module-core-board-wi-fibtble-mcu-for-arduino)
 | Adafruit MCP9600 (b) | I2C Thermocouple amplifier| [https://www.adafruit.com/product/4101](https://www.adafruit.com/product/4101) |
 | Adafruit Type K Thermocouple (c) | 2 wire thermocouple effective temperature ranger -200c to 800c +/-2c| [https://www.adafruit.com/product/3245](https://www.adafruit.com/product/3245) |
-| Jumper Wires (d) |
-| Breadboard (e) |
+| Jumper Wires (d) || [https://www.adafruit.com/product/1956](https://www.adafruit.com/product/1956) |
+| Breadboard (e) || [https://www.adafruit.com/product/64](https://www.adafruit.com/product/64) |
 | Micro USB cable | Used to power the ESP32 board | [https://www.adafruit.com/product/2185](https://www.adafruit.com/product/2185) |
 | USB Power Supply || [https://www.adafruit.com/product/501](https://www.adafruit.com/product/501)| 
 
