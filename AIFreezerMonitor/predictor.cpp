@@ -4,10 +4,12 @@
 
 // int arrayLength = 720;
 
-// float normalize(float value[])
-// {
-//     float mean = meanOf(value);
-// }
+float normalize(float value, float min, float max)
+{
+    float _normalizedValue = (value - min) / (max - min);
+
+    return _normalizedValue;
+}
 
 float meanOf(float *value, int array_size)
 {
@@ -20,19 +22,16 @@ float meanOf(float *value, int array_size)
     return mean;
 }
 
-// float stdOf(float value, float mean)
-// {
-//     float std;
-//     return std;
-// }
-
 float mae(float *x, float *y, int array_size)
 {
     float _error[array_size];
+
     for(int i = 0; i < array_size; i++)
     {
         _error[i] = abs(y[i]-x[i]);
     }
+    
     float _mae = meanOf(_error, array_size);
+    // delete _error;
     return _mae;
 }
