@@ -8,7 +8,7 @@ class database
         void init();
     
     private:
-        AdafruitIO_Feed *temperature;
+        AdafruitIO_Feed *feed;
         void run();
    
 };
