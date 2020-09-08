@@ -3,7 +3,7 @@
 
 database::database(char *name)
 {
-    temperature = io.feed(name);
+    feed = io.feed(name);
 }
 
 void database::init()
@@ -18,7 +18,7 @@ void database::init()
 void database::write(float data)
     {
         io.run();
-        temperature->save(data);
+        feed->save(data);
         if (Serial)
         {     
             Serial.print("Sending: ");

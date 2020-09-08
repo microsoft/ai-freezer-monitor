@@ -52,7 +52,7 @@ const int kTensorArenaSize = kModelArenaSize + kExtraArenaSize;
 uint8_t tensor_arena[kTensorArenaSize];
 }  // namespace
 
-// Variables from trianing notebook
+// Variables from training notebook
 const int input_size = 720;
 const float threshold = 0.077;
 const float min_val = -21.75;
@@ -113,6 +113,7 @@ float x_val[] = {3.788968920707702637e-01,3.788968920707702637e-01,3.81294965744
 void loop()
 {   
 #ifndef TESTING
+
     for (int i = 0; i < input_size; i++)
     {
         x_val[i] = tmp.temperature();
@@ -170,4 +171,5 @@ void loop()
         Serial.println("anomaly detected");
         alert.write(1);
     }
+
 }
