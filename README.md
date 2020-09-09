@@ -99,7 +99,7 @@ Once you downloaded the project files you'll need to create a config.h file and 
 
 1. Install the libraries listed below using Arduino's Library manager. If you have used the library manager before [here](https://www.arduino.cc/en/guide/libraries) is a helpful guide.
     1. Adafruit IO Arduino
-    1. Adafruit 
+    1. Adafruit MCP9600
     > Note: If you're prompted to install other dependencies for these libraries, select *Install All*
 
 1. With FreezerTempAlert.ino open in the Arduino IDE select **Tools>Board>ESP32 DEV Module**

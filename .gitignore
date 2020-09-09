@@ -1,3 +1,4 @@
 .vscode/
 FreezerTempAlert/config.h
 dataset/
+.venv/
