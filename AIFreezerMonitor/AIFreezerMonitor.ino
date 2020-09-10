@@ -1,17 +1,17 @@
 // Copyright (c) Microsoft Corporation. All Rights Reserved.
-
+//
 // MIT License
-
+//
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the Software), to deal 
 // in the Software without restriction, including without limitation the rights
 // to use, copy, modify, merge, publish, distribute, sublicense, and/or sell 
 // copies of the Software, and to permit persons to whom the Software is 
 // furnished to do so, subject to the following conditions:
-
+//
 // The above copyright notice and this permission notice shall be included in
 // all copies or substantial portions of the Software.
-
+//
 // THE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
@@ -33,7 +33,13 @@
 #include "temp_sensor.h"
 #include "database.h"
 
+// There is testing and debugging code included in this program. These should
+// stay commeneted out for general use of the temperature monitor. It can be
+// useful to test the model the first time the monintor is set up to make sure
+// it's working as expected.
+
 // #define TESTING
+#define DEBUG
 
 // Globals, used for compatibility with Arduino-style sketches.
 namespace {
@@ -64,6 +70,10 @@ int accumulator = 0;
 temp_sensor tmp;
 database temperature("temperature");
 database alert("temp_alert");
+
+#ifdef DEBUG
+database error("MAE");
+#endif
 
 void setup(){
   // Set up logging
@@ -101,9 +111,14 @@ void setup(){
   output = interpreter->output(0);
 
   Serial.begin(9600);
+
+    // Initialize the temperature sensor and databases.
   tmp.init();
   temperature.init();
   alert.init();
+  #ifdef DEBUG
+  error.init();
+  #endif
 }
 
 #ifdef TESTING
@@ -112,8 +127,10 @@ float x_val[] = {3.788968920707702637e-01,3.788968920707702637e-01,3.81294965744
 
 void loop()
 {   
-#ifndef TESTING
+    #ifndef TESTING
 
+    // Gathers an hours worth of temperature readings from the sensor
+    // We also continue to record specific temperatures in our database
     for (int i = 0; i < input_size; i++)
     {
         x_val[i] = tmp.temperature();
@@ -121,14 +138,16 @@ void loop()
         delay(5000);
     }
 
+    // Normalizes the data based on the variables from the training notebook
     for (int i = 0; i< input_size; i++)
     {
         x_val[i] = normalize(x_val[i], max_val, min_val);
         
     }
+    #endif
 
-#endif
-        for (int i = 0; i < input_size; i++)
+    // Copy the data to the input tensor pointer
+    for (int i = 0; i < input_size; i++)
     {
         input->data.f[i] = x_val[i];
     }
@@ -141,6 +160,7 @@ void loop()
         return;
     }
     float y_val[input_size];
+    
     // Read the predicted y value from the model's output tensor
     for (int i = 0; i < input_size; i++)
     {
@@ -153,11 +173,15 @@ void loop()
     {
         Serial.print("Mean Absolute Error: ");
         Serial.println(sampleMae, 4);
+        #ifdef DEBUG
+        error.write(sampleMae);
+        #endif
     }
+
     if (sampleMae > threshold){
         accumulator += 1;
     }
-    else
+    else if (sampleMae <= threshold)
     {
         accumulator -= 2;
         if (accumulator < 0)
@@ -169,7 +193,6 @@ void loop()
     if (accumulator > 4)
     {
         Serial.println("anomaly detected");
-        alert.write(1);
+        alert.write(accumulator);
     }
-
 }
