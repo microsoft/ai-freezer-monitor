@@ -39,7 +39,7 @@
 // it's working as expected.
 
 // #define TESTING
-#define DEBUG
+// #define DEBUG
 
 // Globals, used for compatibility with Arduino-style sketches.
 namespace {
@@ -137,13 +137,15 @@ void loop()
         temperature.write(x_val[i]);
         delay(5000);
     }
-    
+
+    #endif
+
     // Normalizes the data based on the variables from the training notebook
     for (int i = 0; i< input_size; i++)
     {
         x_val[i] = normalize(x_val[i], min_val, max_val);       
     }
-    #endif
+
 
     // Copy the data to the input tensor pointer
     for (int i = 0; i < input_size; i++)
