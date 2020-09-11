@@ -6,7 +6,7 @@ This project takes about 60 to 90 minutes to build.
 ## Materials and Tech  
 |Materials | Description | Link |
 |-----|-------------|------|
-| ESP32 DevKit (a) | WiFi enabled prototyping board| [https://www.keyestudio.com/products/2019new-keyestudio-esp32-wroom-32d-module-core-board-wi-fibtble-mcu-for-arduino](https://www.keyestudio.com/products/2019new-keyestudio-esp32-wroom-32d-module-core-board-wi-fibtble-mcu-for-arduino)
+| Adafruit Feather Huzzah32 (a) | WiFi enabled ESP32 based prototyping board| [https://www.adafruit.com/product/3591](https://www.adafruit.com/product/3591)
 | Adafruit MCP9600 (b) | I2C Thermocouple amplifier| [https://www.adafruit.com/product/4101](https://www.adafruit.com/product/4101) |
 | Adafruit Type K Thermocouple (c) | 2 wire thermocouple effective temperature ranger -200c to 800c +/-2c| [https://www.adafruit.com/product/3245](https://www.adafruit.com/product/3245) |
 | Jumper Wires (d) || [https://www.adafruit.com/product/1956](https://www.adafruit.com/product/1956) |
@@ -24,6 +24,9 @@ This project takes about 60 to 90 minutes to build.
 | 00 Philips Head Screw Driver|
 | Soldering Iron |
 
+
+> The pictures below use a generic ESP32 Dev board, new picture with the Adafruit Huzzah32 coming soon!
+
 ![Picture of all the materials used in the project](/media/allmaterials.jpg)
 
 ## Prerequisites
@@ -37,6 +40,7 @@ This project takes about 60 to 90 minutes to build.
     ![](/media/build01.jpg)
 1. Solder the pins to the bottom side of the MCP9600.  
     > *Tip: Put the pins in the breadboard to hold them in place when soldering.*
+
     ![](/media/build02.jpg)
 1. Connect the ESP32 and MCP9600 to the breadboard.
 1. Follow the wiring diagram below to connect the MCP9600 to the ESP32 using your jumper wires.
