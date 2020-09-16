@@ -105,16 +105,15 @@ Once you downloaded the project files you'll need to create a config.h file and 
     1. Adafruit MCP9600
     > Note: If you're prompted to install other dependencies for these libraries, select *Install All*
 
-1. With FreezerTempAlert.ino open in the Arduino IDE select **Tools>Board>ESP32 DEV Module**
+1. With FreezerTempAlert.ino open in the Arduino IDE select **Tools>Board>Adafruit ESP32 Feather**
 
 1. Select the active COM Port in **Tools>Port**
 
 1. Press the *Upload* button   
     ![Arduino upload button](/media/upload.png)
 
-1. If you output monitor prints out *Connecting......._____*
-you'll need to press the boot button on your ESP32 board.
-    >Note: you may have to press boot more than once for it to work.
+    > Note: If you output monitor prints out *Connecting......._____*
+you'll need to press the boot button on your ESP32 board. You may have to press boot more than once for it to work.
 
 1. Open the Arduino serial monitor to verify that everything is working properly on the board.
 
