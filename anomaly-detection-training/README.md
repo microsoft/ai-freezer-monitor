@@ -9,6 +9,6 @@ An autoencoder is a type of compression algorithm that works well on the type of
 The model is built using two parts: 1) an encoder, which compresses the data, and 2) a decoder, which decompresses the data. Decompression allows you to check the accuracy of the re-created data. A high error rate in re-created data is likely an anomaly.
 
 ## Further Reading
-https://keras.io/examples/timeseries/timeseries_anomaly_detection/
-https://www.tensorflow.org/tutorials/generative/autoencoder
-https://github.com/ShawnHymel/tinyml-example-anomaly-detection
+[Autoencoder example from Keras](https://keras.io/examples/timeseries/timeseries_anomaly_detection/)
+[Autoencoder example from TensorFlow](https://www.tensorflow.org/tutorials/generative/autoencoder)
+[Anomaly detection project by Shawn Hymel](https://github.com/ShawnHymel/tinyml-example-anomaly-detection)
