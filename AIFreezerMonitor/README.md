@@ -50,7 +50,7 @@ Once you have downloaded the project files, you'll need to create a config.h fil
 
 1. Follow the first section of this [guide](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/) to add the ESP32 extension to the Arduino IDE.
 
-1. Install the libraries listed below using Arduino's Library manager. If you have used the library manager before [here](https://www.arduino.cc/en/guide/libraries) is a helpful guide.
+1. Install the libraries listed below using Arduino's Library manager. If you have't used the library manager before, [here](https://www.arduino.cc/en/guide/libraries) is a helpful guide.
     1. Adafruit IO Arduino
     1. Adafruit MCP9600
     1. TensorFlowLite_ESP32
