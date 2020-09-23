@@ -65,6 +65,6 @@ Once you have downloaded the project files, you'll need to create a config.h fil
 
 ## Installing
 
-If you moved the thermocouple in order to upload the new code, do your best to place back in the same place in the freezer. If the thermocouple is moved too far away from the training position it may misidentify normal operation as an anomaly.
+If you moved the thermocouple to upload the new code, do your best to re-install it in the same place. If the thermocouple is moved too far away from the training position, the ML model may mistake normal operation as an anomaly.
 
 Your IFTTT warning should still be working the same as before, so you don't need to change anything there.
