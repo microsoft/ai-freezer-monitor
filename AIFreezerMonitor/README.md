@@ -6,7 +6,7 @@ With your model trained and exported to a C array you're ready to implement it o
 
 Clone this repo to your computer, or you can download the directory for this project [here](https://github.com/microsoft/freezer-temp-monitor/archive/main.zip)
 
-Once you downloaded the project files you'll need to create a config.h file and fill in your AdafruitIO and WiFi credentials.
+Once you have downloaded the project files, you'll need to create a config.h file and fill in your AdafruitIO and WiFi credentials.
 
 1. In the *AIFreezerMonitor* folder create a new text file called *config.h*
     > Note: You can also copy the config.h file you created for the data collection code.
