@@ -1,6 +1,6 @@
 # AI Freezer Monitor
 
-With you model trained and exported to a C array you're ready to impliment it on your Feather Huzzah 32. Some of the code is similar to the first part of the project, but you may notice the addtion of Tensor Flow. Other than updating the code on your device you shouldn't have to change anything. It is best to leave the thermocouple where it is in the freezer since moving it may affect the results of the machine learning model.
+With your model trained and exported to a C array you're ready to implement it on your Feather Huzzah 32. We'll need to update the software on our ESP32, but the hardware can stay the same. In fact, it is best to leave the thermocouple in the freezer since moving it may affect the results of the machine learning model.
 
 ## Code
 
