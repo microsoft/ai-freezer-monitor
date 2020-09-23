@@ -43,7 +43,7 @@ This project takes about 60 to 90 minutes to build.
 
     ![](/media/build02.jpg)
 1. Insert the ESP32 and thermocouple amplifier into the breadboard.
-1. Follow the wiring diagram below to connect the MCP9600 to the ESP32 using your jumper wires.
+1. Follow the wiring diagram below to connect the thermocouple amplifier to the ESP32 using your jumper wires.
     ![](/media/diagram.png)
 1. Connect the Thermocouple to the screw terminals on the MCP9600
     ![](/media/build03.jpg)
