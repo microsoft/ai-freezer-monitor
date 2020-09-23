@@ -1,3 +1,12 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+// 
+// This program read the temperature using a thermocouple and uploads it to an
+// online database. If temperature goes above a specific threshold it triggers
+// a warning. This is part of a bigger project that can be found at 
+// https://github.com/microsoft/ai-freezer-monitor. The code is designed to
+// work on Adafruit's Huzzah32, but should work on any ESP32 dev board.
+
 #include "cls.h"
 
 temp_sensor tmp;

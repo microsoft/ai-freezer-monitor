@@ -1,3 +1,9 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+// 
+// all classes used in program
+
+
 #include <Wire.h>
 #include <Adafruit_I2CDevice.h>
 #include <Adafruit_I2CRegister.h>
