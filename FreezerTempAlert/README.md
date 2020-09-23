@@ -4,15 +4,15 @@ This tutorial covers everything you'll need to build and run your own freezer te
 This project takes about 60 to 90 minutes to build.
 
 ## Materials and Tech  
-|Materials | Description | Link |
+|Materials | Description | Vendor |
 |-----|-------------|------|
-| Adafruit Feather Huzzah32 (a) | WiFi enabled ESP32 based prototyping board| [https://www.adafruit.com/product/3591](https://www.adafruit.com/product/3591)
-| Adafruit MCP9600 (b) | I2C Thermocouple amplifier| [https://www.adafruit.com/product/4101](https://www.adafruit.com/product/4101) |
-| Adafruit Type K Thermocouple (c) | 2 wire thermocouple effective temperature ranger -200c to 800c +/-2c| [https://www.adafruit.com/product/3245](https://www.adafruit.com/product/3245) |
-| Jumper Wires (d) || [https://www.adafruit.com/product/1956](https://www.adafruit.com/product/1956) |
-| Breadboard (e) || [https://www.adafruit.com/product/64](https://www.adafruit.com/product/64) |
-| Micro USB cable | Used to power the ESP32 board | [https://www.adafruit.com/product/2185](https://www.adafruit.com/product/2185) |
-| USB Power Supply || [https://www.adafruit.com/product/501](https://www.adafruit.com/product/501)| 
+| Adafruit Feather Huzzah32 (a) | WiFi enabled ESP32 based prototyping board| [Adafruit](https://www.adafruit.com/product/3591)
+| Adafruit MCP9600 (b) | I2C Thermocouple amplifier| [Adafruit](https://www.adafruit.com/product/4101) |
+| Adafruit Type K Thermocouple (c) | 2 wire thermocouple effective temperature ranger -200c to 800c +/-2c| [Adafruit](https://www.adafruit.com/product/3245) |
+| Jumper Wires (d) || [Adafruit](https://www.adafruit.com/product/1956) |
+| Breadboard (e) || [Adafruit](https://www.adafruit.com/product/64) |
+| Micro USB cable | Used to power the ESP32 board | [Adafruit](https://www.adafruit.com/product/2185) |
+| USB Power Supply || [Adafruit](https://www.adafruit.com/product/501)| 
 
 | Software | Description | Link |
 |----------|-------------|------|
