@@ -6,7 +6,7 @@ This project takes about 60 to 90 minutes to build.
 ## Materials and Tech  
 |Materials | Description | Link |
 |-----|-------------|------|
-| Adafruit Feather Huzzah32 (a) | WiFi enabled ESP32 based prototyping board| [https://www.adafruit.com/product/3591](https://www.adafruit.com/product/3591)
+| Adafruit Feather Huzzah32 (a) | WiFi-enabled ESP32 prototyping board| [https://www.adafruit.com/product/3591](https://www.adafruit.com/product/3591)
 | Adafruit MCP9600 (b) | I2C Thermocouple amplifier| [https://www.adafruit.com/product/4101](https://www.adafruit.com/product/4101) |
 | Adafruit Type K Thermocouple (c) | 2 wire thermocouple effective temperature ranger -200c to 800c +/-2c| [https://www.adafruit.com/product/3245](https://www.adafruit.com/product/3245) |
 | Jumper Wires (d) || [https://www.adafruit.com/product/1956](https://www.adafruit.com/product/1956) |
