@@ -1,6 +1,6 @@
 # Machine Learning Training Notebook
 
-After you have 30 days of data from your freezer you can use it to train a Machine Learning model. The goal of this model is be able to warn you before the freezer fails rather than after the tempereature is already too high. To do this we're going to use an autoencoder algorithem.
+Once you have 30 days of data from your freezer, you're ready to train a custom Machine Learning (ML) model! The goal of this model is to warn you before a freezer fails, giving you time to address the failure prior to losing critical work. To do this we'll use an auto-encoder algorithm.
 
 ## About Autoencoders
 
