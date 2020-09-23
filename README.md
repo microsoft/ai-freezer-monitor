@@ -1,7 +1,9 @@
 # AI Freezer Monitor
-The AI Freezer Monitor is a diy IoT monitor that uses machine learning to provide early warnings of potential equiepment failure. The project covers building the device from readily avialable compoenents, collecting data, setting up email alerts, training an auto encoder machine learning model, and depolying the model to an ESP32 development board. The project is designed to be in with ultra low temperature scientific freezers, with the goal of reducing the need to keep backup freezers running full time. That said this project has not gone through extensive testing and should be relyed on in critical applications before you are certain that it is performing as expected on your equipment. As more people use this and contribute improvements to this project we will be able to increas the efficacy of this accross different devices.
+The AI Freezer Monitor is a DIY IoT monitor that uses machine learning, or ML, to provide early warnings of potential equipment failure. This guide covers building the device, collecting training data, setting up email alerts, training a custom auto encoder machine learning model, and deploying the model to an ESP32 development board. 
 
->The project should take between two and three hours to complete, but the device will need to passivly collect temperature data for 30 days before you will be able to train the model.
+The project is designed to be functional for low temperature scientific freezers (-60 C), with the goal of reducing  catastrophic failure and the need to keep backup freezers running full-time. However, please note that this project is primarily for demonstrative and educational purposes and has not gone through extensive testing. 
+
+>This project takes about two to three hours to fully complete. Please note that the device will need to passively collect temperature data for about 30 days before you will be able to train the model.
 
 # Contents
 

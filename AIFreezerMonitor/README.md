@@ -1,12 +1,12 @@
 # AI Freezer Monitor
 
-With you model trained and exported to a C array you're ready to impliment it on your Feather Huzzah 32. Some of the code is similar to the first part of the project, but you may notice the addtion of Tensor Flow. Other than updating the code on your device you shouldn't have to change anything. It is best to leave the thermocouple where it is in the freezer since moving it may affect the results of the machine learning model.
+With your model trained and exported to a C array you're ready to implement it on your Feather Huzzah 32. We'll need to update the software on our ESP32, but the hardware can stay the same. In fact, it is best to leave the thermocouple in the freezer since moving it may affect the results of the machine learning model.
 
 ## Code
 
 Clone this repo to your computer, or you can download the directory for this project [here](https://github.com/microsoft/freezer-temp-monitor/archive/main.zip)
 
-Once you downloaded the project files you'll need to create a config.h file and fill in your AdafruitIO and WiFi credentials.
+Once you have downloaded the project files, you'll need to create a config.h file and fill in your AdafruitIO and WiFi credentials.
 
 1. In the *AIFreezerMonitor* folder create a new text file called *config.h*
     > Note: You can also copy the config.h file you created for the data collection code.
@@ -50,7 +50,7 @@ Once you downloaded the project files you'll need to create a config.h file and 
 
 1. Follow the first section of this [guide](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/) to add the ESP32 extension to the Arduino IDE.
 
-1. Install the libraries listed below using Arduino's Library manager. If you have used the library manager before [here](https://www.arduino.cc/en/guide/libraries) is a helpful guide.
+1. Install the libraries listed below using Arduino's Library manager. If you have't used the library manager before, [here](https://www.arduino.cc/en/guide/libraries) is a helpful guide.
     1. Adafruit IO Arduino
     1. Adafruit MCP9600
     1. TensorFlowLite_ESP32
@@ -65,6 +65,6 @@ Once you downloaded the project files you'll need to create a config.h file and 
 
 ## Installing
 
-If you moved the thermocouple in order to upload the new code, do your best to place back in the same place in the freezer. If the thermocouple is moved too far away from the training position it may misidentify normal operation as an anomaly.
+If you moved the thermocouple to upload the new code, do your best to re-install it in the same place. If the thermocouple is moved too far away from the training position, the ML model may mistake normal operation as an anomaly.
 
 Your IFTTT warning should still be working the same as before, so you don't need to change anything there.
