@@ -3,7 +3,7 @@ This tutorial covers everything you'll need to build and run your own freezer te
 
 This project takes about 60 to 90 minutes to build.
 
-## Materials and Tech  
+## Materials and Tools
 |Materials | Description | Link |
 |-----|-------------|------|
 | Adafruit Feather Huzzah32 (a) | WiFi-enabled ESP32 prototyping board| [https://www.adafruit.com/product/3591](https://www.adafruit.com/product/3591)
