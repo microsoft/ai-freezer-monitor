@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 // 
-// utlities used to porcess data for ML
+// Utlities used to porcess data for ML
 
 #ifndef PREDICTOR_H_
 #define PREDICTOR_H_
