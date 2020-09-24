@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 // 
-// This program read the temperature using a thermocouple, aggregates one hour
+// This program reads the temperature using a thermocouple, aggregates one hour
 // of data, and runs that data through a machine learning model to detected 
 // anomalies in the temperature data. This is part of a bigger project that can
 // be found at https://github.com/microsoft/ai-freezer-monitor. The code is 
@@ -127,7 +127,7 @@ void loop()
 
     #endif
 
-    // Normalizes the data based on the variables from the training notebook
+    // Normalize the data based on the variables from the training notebook
     for (int i = 0; i< input_size; i++)
     {
         x_val[i] = normalize(x_val[i], min_val, max_val);       
@@ -149,7 +149,7 @@ void loop()
     }
     float y_val[input_size];
     
-    // Read the predicted y value from the model's output tensor
+    // Read the predicted value (y_val) from the model's output tensor
     for (int i = 0; i < input_size; i++)
     {
         y_val[i] = output->data.f[i];
