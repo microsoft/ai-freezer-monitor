@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 // 
-// Utlities used to porcess data for ML
+// Utilities used to process data for ML
 
 #include "predictor.h"
 #include <Arduino.h>

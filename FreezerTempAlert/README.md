@@ -24,9 +24,6 @@ This project takes about 60 to 90 minutes to build.
 | 00 Philips Head Screw Driver|
 | Soldering Iron |
 
-
-> The pictures below use a generic ESP32 Dev board, new picture with the Adafruit Huzzah32 coming soon!
-
 ![Picture of all the materials used in the project](/media/allmaterials.jpg)
 
 ## Prerequisites
@@ -45,7 +42,10 @@ This project takes about 60 to 90 minutes to build.
 1. Insert the ESP32 and thermocouple amplifier into the breadboard.
 1. Follow the wiring diagram below to connect the thermocouple amplifier to the ESP32 using your jumper wires.
     ![](/media/diagram.png)
+
 1. Connect the Thermocouple to the screw terminals on the MCP9600
+    > The picture below use a generic ESP32 Dev board, new picture with the Adafruit Huzzah32 coming soon!
+    
     ![](/media/build03.jpg)
 
 ## Code
