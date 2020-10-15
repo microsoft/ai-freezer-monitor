@@ -18,6 +18,8 @@ You can use VS Code to view and run the Jupyter notebook that contains the anoma
 
 ### Python installation
 
+You'll also need to install Python. Follow the links below to install Python for your appropriate operating system.
+
 [Python 3.8.6 Windows Installation](hhttps://www.python.org/ftp/python/3.8.6/python-3.8.6-amd64.exe)
 
 [Python 3.8.6 Mac Installation](https://www.python.org/ftp/python/3.8.6/python-3.8.6-macosx10.9.pkg)
