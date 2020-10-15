@@ -12,7 +12,7 @@ After you install Python, run the environment-setup.sh script that's in the [ano
 
 ### VS Code installation
 
-You can use VS Code to view and run the Jupyter notebook with the code in it. The notebook uses interactive Python which will walk you through the steps of the training the model. If you don't have VS Code installed use the link below to download and install it.
+You can use VS Code to view and run the Jupyter notebook that contains the anomaly detection training code. The notebook uses interactive Python, which walks you through the steps of the training the model. Use the link below to download and install VS Code.
 
 [VS Code](https://code.visualstudio.com/)
 
