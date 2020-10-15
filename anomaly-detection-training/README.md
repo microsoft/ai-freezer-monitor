@@ -4,7 +4,11 @@ Once you have 30 days of data from your freezer, you're ready to train a custom 
 
 ## Environment Setup
 
-You're going to use Python to train your model, if you're not familiar with Python, don't worry it's a relatively approachable and readable programing Language. For a brief introduction to python check out this [guide](https://docs.microsoft.com/en-us/learn/modules/intro-to-python/). There are also several machine learning Python libraries, and we recommend using these in a virtual environment. Doing this will keep your global installation of Python clean and keep all the dependencies for this project in one place. After you install Python run the environment-setup.sh script that's in the same directory as the autoencoder_training.ipynb.
+We'll use Python to train the model.  If you're new to Python, check out this [guide](https://docs.microsoft.com/en-us/learn/modules/intro-to-python/) for a quick intro. 
+
+We'll also use several machine learning Python libraries. We recommend using these in a virtual environment as this will keep your global installation of Python clean and keep all the dependencies for this project in one place. 
+
+After you install Python, run the environment-setup.sh script that's in the [anomaly-detection-training](https://github.com/microsoft/ai-freezer-monitor/tree/main/anomaly-detection-training) directory.
 
 ### VS Code installation
 
